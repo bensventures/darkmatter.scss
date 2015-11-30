@@ -1,0 +1,175 @@
+// Use import if you have an global variable file
+//@import 'variables';
+
+$color-divider: #B6B6B6;
+$color-text: #fff;
+$color-accent: #FF4081;
+$color-error: #FF4081;
+
+body * {
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+figure {
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="time"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+textarea {
+    background-color: transparent;
+    border: 1px solid $color-divider;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    outline: medium none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s ease 0s;
+
+    &:focus {
+        border-bottom: 1px solid $color-primary;
+        box-shadow: 0 1px 0 0 #26A69A;
+    }
+}
+
+select:focus {
+    outline: 1px solid $color-primary;
+}
+
+
+form ul li{
+    list-style: none;
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.icon-label {
+    flex: 0 0 auto;
+
+    svg {
+        margin: 12px 8px 0 0;
+    }
+}
+
+.icon-label + input {
+    flex: 1 1 auto;
+}
+
+select {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    padding: 5px;
+    border: 1px solid $color-divider;
+    border-radius: 2px;
+    height: 3rem;
+}
+
+
+button {
+    border: medium none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0 none;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-decoration: none;
+    color: $color-text;
+    background-color: $color-accent;
+    text-align: center;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-out 0s;
+    cursor: pointer;
+}
+
+.icon-btn {
+    border: 0;
+    height: auto;
+    width: auto;
+    padding: 5px 8px;
+    border-radius: 2px;
+
+    .icon {
+        vertical-align: middle;
+        fill: $color-text;
+    }
+}
+
+.grouped-inputs {
+    display: flex;
+
+    input, button {
+        line-height: 2rem;
+        height: 2rem;
+        padding: .2rem;
+        border-radius: 0;
+    }
+
+    input {
+        flex: 1 1 auto;
+    }
+
+    button {
+        flex: 0 0 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 21px;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: inherit;
+    border: 0 none;
+}
+
+.error {
+    display: block;
+    color: $color-error;
+}
