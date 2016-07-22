@@ -1,6 +1,6 @@
 {
   "name": "darkmatter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A micro reset library for material-ish look and feel",
   "main": "darkmatter.scss",
   "scripts": {
