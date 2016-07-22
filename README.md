@@ -8,4 +8,4 @@ The idea was to only use tag names to make it a trully drop-in reset. However so
 * `.icon-btn`: A button that has a `.icon` in it.
 * `.icon`: An icon. Only necessary when used inside a button. Meant for svgs for now.
 * `.grouped-inputs`: Make inputs stick together. Works for textual inputs (text, number, password) and `<button>`.
-* `.error`: For error messages. 
+* `.textarea-label`: A label for textarea, that sticks to the top. 
