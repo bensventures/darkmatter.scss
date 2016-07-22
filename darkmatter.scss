@@ -18,6 +18,8 @@ $color-email: #009688;
 $color-error: #ff4081;
 */
 
+@import 'node_modules/normalize-scss/sass/normalize/_normalize.scss'
+
 body * {
     box-sizing: border-box;
 }
