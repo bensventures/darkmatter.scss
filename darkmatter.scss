@@ -105,6 +105,7 @@ textarea {
 
 textarea {
     height: auto;
+    margin-top: .5rem;
 }
 
 select:focus {
@@ -130,7 +131,7 @@ form ul li{
         align-self: flex-start;
 
         svg {
-            margin: 0 8px 0 0;
+            margin: .5rem 8px 0 0;
         }
     }
 }
