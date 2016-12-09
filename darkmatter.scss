@@ -123,11 +123,15 @@ form ul li{
     align-items: center;
 }
 
+label {
+    margin-right: 1rem;
+}
+
 .icon-label {
     flex: 0 0 auto;
 
     svg {
-        margin: 0 8px 0 0;
+        margin: 0;
         height: 1em;
         width: 1em;
     }
@@ -136,7 +140,7 @@ form ul li{
         align-self: flex-start;
 
         svg {
-            margin: .5rem 8px 0 0;
+            margin: .5rem 0 0 0;
         }
     }
 }
