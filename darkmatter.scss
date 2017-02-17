@@ -103,6 +103,10 @@ textarea {
     }
 }
 
+input[size] {
+    width: auto;
+}
+
 textarea {
     height: auto;
     margin-top: .5rem;
@@ -121,6 +125,14 @@ form ul li{
     display: flex;
     margin-bottom: 18px;
     align-items: center;
+
+    & label {
+        margin-left: 2rem;
+    }
+
+    & label:first-child {
+        margin-left: 0;
+    }
 }
 
 label {
@@ -147,6 +159,12 @@ label {
 
 .icon-label + input, input + .icon-btn {
     flex: 1 1 auto;
+}
+
+.icon-label .icon + span {
+    margin-left: .5rem;
+    font-size: .9rem;
+    color: $color-text-primary-light;
 }
 
 select {
@@ -223,4 +241,21 @@ legend {
     color: rgba(0, 0, 0, 0.87);
     line-height: inherit;
     border: 0 none;
+}
+
+progress {
+    &::-webkit-progress-bar, & {
+        appearance: none;
+        background-color: $color-divider-light;
+        border: 0;
+        height: 2px;
+    }
+
+    &::-webkit-progress-value {
+        background-color: $color-primary;
+    }
+
+    &::-moz-progress-bar {
+        background-color: $color-primary;
+    }
 }
