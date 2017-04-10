@@ -105,6 +105,7 @@ textarea {
 
 input[size] {
     width: auto;
+    flex: 0 1 auto;
 }
 
 textarea {
@@ -152,13 +153,23 @@ label {
         align-self: flex-start;
 
         svg {
+            float: left;
             margin: .5rem 0 0 0;
+        }
+
+        span {
+            display: inline-block;
+            margin-top: .5rem;
         }
     }
 }
 
 .icon-label + input, input + .icon-btn {
     flex: 1 1 auto;
+
+    &[size] {
+        flex: 0 1 auto;
+    }
 }
 
 .icon-label .icon + span {
