@@ -87,9 +87,9 @@ textarea {
     border: 1px solid $color-divider;
     border-width: 0 0 1px 0;
     border-radius: 0;
+    width: 100%;
     outline: medium none;
     height: 3rem;
-    width: 100%;
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -103,9 +103,11 @@ textarea {
     }
 }
 
-input[size] {
-    width: auto;
-    flex: 0 1 auto;
+// Only big devices
+@media (min-width: 640px) {
+    input[size] {
+        width: auto;
+    }
 }
 
 textarea {
@@ -123,12 +125,14 @@ label input {
 
 form ul li{
     list-style: none;
-    display: flex;
-    margin-bottom: 18px;
-    align-items: center;
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     & label {
-        margin-left: 2rem;
+        display: block;
     }
 
     & label:first-child {
@@ -136,13 +140,7 @@ form ul li{
     }
 }
 
-label {
-    margin-right: 1rem;
-}
-
 .icon-label {
-    flex: 0 0 auto;
-
     svg {
         margin: 0;
         height: 1em;
@@ -150,7 +148,6 @@ label {
     }
 
     &.textarea-label {
-        align-self: flex-start;
 
         svg {
             float: left;
@@ -165,11 +162,7 @@ label {
 }
 
 .icon-label + input, input + .icon-btn {
-    flex: 1 1 auto;
 
-    &[size] {
-        flex: 0 1 auto;
-    }
 }
 
 .icon-label .icon + span {
@@ -247,8 +240,8 @@ legend {
     display: block;
     width: 100%;
     padding: 0;
-    margin-bottom: 10px;
-    font-size: 21px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
     color: rgba(0, 0, 0, 0.87);
     line-height: inherit;
     border: 0 none;
