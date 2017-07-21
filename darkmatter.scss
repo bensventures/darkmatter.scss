@@ -141,8 +141,8 @@ form ul li{
 }
 
 .icon-label {
-    svg {
-        margin: 0;
+    .icon {
+        margin: 0 .5rem 0 0;
         height: 1em;
         width: 1em;
     }
@@ -165,8 +165,7 @@ form ul li{
 
 }
 
-.icon-label .icon + span {
-    margin-left: .5rem;
+.icon-label > span {
     font-size: .9rem;
     color: $color-text-primary-light;
 }
